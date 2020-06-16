@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C3009688"
+            android:gravity="center"
+            android:minHeight="70dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp"
+            android:text="请输入你的新密码"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="#C3009688">
+
+            <EditText
+                android:id="@+id/edittext"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="#F3F8F7F7"
+                android:hint="输入新密码"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="206dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:text="确认更改"
+                android:textColor="#3F51B5"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="206dp"
+                android:layout_height="40dp"
+                android:background="#ffffff"
+                android:text="取消"
+                android:textStyle="bold"
+                android:textColor="#F44336" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

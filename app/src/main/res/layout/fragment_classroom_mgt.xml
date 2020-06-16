@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="0dp"
+        android:background="#142196F3"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="466dp">
+
+            <TextView
+                android:id="@+id/T1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="27dp"
+                android:text="教室地址："
+                android:textColor="#2196F3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/EE1"
+                android:layout_width="98dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@+id/T1"
+                android:background="@null"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/T2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="225dp"
+                android:layout_marginTop="27dp"
+
+                android:text="可容纳人数："
+                android:textColor="#2196F3"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/EE2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@+id/T2"
+                android:background="@null"
+                android:text="" />
+
+            <ListView
+                android:id="@+id/course"
+                android:layout_width="match_parent"
+                android:layout_height="396dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="158dp">
+
+            <Button
+                android:id="@+id/BAdd"
+                style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="22dp"
+                android:text="增加新的教室信息" />
+
+            <Button
+                android:id="@+id/BDelete"
+                style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginTop="22dp"
+                android:layout_toEndOf="@+id/BAdd"
+                android:text="删除此教室信息" />
+
+            <Button
+                android:id="@+id/BUpdate"
+                style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BAdd"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="34dp"
+                android:layout_marginTop="7dp"
+                android:text="修改此教室信息" />
+
+            <Button
+                android:id="@+id/BScore"
+                style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BDelete"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/BUpdate"
+                android:text="查看所有教室" />
+
+            <Button
+                android:id="@+id/BClean"
+                style="@android:style/Widget.DeviceDefault.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BDelete"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/BScore"
+                android:text="清空内容" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

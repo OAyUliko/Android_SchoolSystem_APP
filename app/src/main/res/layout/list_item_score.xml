@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+        <TextView
+            android:id="@+id/course_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="70dp"
+            android:text="课程名字"
+            android:textColor="#009688"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/course_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="240dp"
+            android:layout_marginBottom="70dp"
+            android:text="课程学分："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/course_score"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="课程成绩："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/course_point"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="课程绩点："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/course_year"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="240dp"
+            android:layout_marginBottom="40dp"
+            android:text="课程学年："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/course_style"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="240dp"
+            android:layout_marginBottom="10dp"
+            android:text="课程类别："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

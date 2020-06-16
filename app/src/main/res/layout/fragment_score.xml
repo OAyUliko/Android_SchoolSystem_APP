@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:id="@+id/score_horiscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:fillViewport="true"
+        android:scrollbars="none">  <!--去掉滚动条-->
+        <LinearLayout
+            android:id="@+id/score_linlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/score_lv"
+        android:layout_width="match_parent"
+        android:layout_height="485dp"
+        android:layout_below="@+id/score_horiscroll"
+        android:layout_marginTop="0dp"
+        android:divider="#564"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/fortea1"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/score_lv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="49dp"
+        android:gravity="center"
+        android:text="单次登录时，第一次点击进入某课程是进行成绩输入" />
+    <TextView
+        android:id="@+id/fortea2"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/score_lv"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="49dp"
+        android:gravity="center"
+        android:text="提交返回后再点击是查看课程成绩" />
+
+
+</RelativeLayout>

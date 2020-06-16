@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horiscroll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fillViewport="true"
+        android:scrollbars="none">  <!--去掉滚动条-->
+        <LinearLayout
+            android:id="@+id/linlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--默认是横向填充,可以使用orientation改变;根据当前行中View的height的最大值，来确定行的高度;
+    最后一列之前的宽度由width的最大值来确定。但最后一列的宽度根据当前所剩宽度来确定宽度
+    默认情况下是没有网格线的-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/horiscroll"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="690dp"
+                android:layout_marginTop="0dp"
+                android:columnCount="8"
+                android:rowCount="11">
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

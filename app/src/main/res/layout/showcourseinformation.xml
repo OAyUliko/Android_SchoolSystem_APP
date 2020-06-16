@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:text="课程名："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ECN"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/T1"
+        android:background="@null"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/T3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="65dp"
+        android:text="学分："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ECC"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="65dp"
+        android:layout_toEndOf="@+id/T3"
+        android:background="@null"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/T5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="103dp"
+        android:text="课程类型："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/T7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="141dp"
+        android:text="学期："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/ECT"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="141dp"
+        android:layout_toEndOf="@+id/T7"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/T4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="141dp"
+        android:text="学年："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ECY"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="141dp"
+        android:layout_toEndOf="@+id/T4"
+        android:background="@null"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/T8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="179dp"
+        android:text="课程是否分单双周："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--spinner 的长度也要设置好。不然值获得到了，但是长度短了还是不会显示的-->
+    <Spinner
+        android:id="@+id/SCS"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="179dp"
+        android:layout_toEndOf="@+id/T8" />
+
+    <TextView
+        android:id="@+id/T9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="217dp"
+        android:text="开始周数："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ECEW"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="255dp"
+        android:layout_toEndOf="@+id/T2"
+        android:background="@null"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="255dp"
+        android:text="结束周数："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/ECSW"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="217dp"
+        android:layout_toEndOf="@+id/T9"
+        android:background="@null"
+        android:text="" />
+
+    <Spinner
+        android:id="@+id/SCCR"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="293dp"
+        android:layout_toEndOf="@+id/T10" />
+
+    <TextView
+        android:id="@+id/T10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="293dp"
+        android:text="教室："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/SCT"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="293dp"
+        android:layout_toEndOf="@+id/T11" />
+
+    <TextView
+        android:id="@+id/T11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="293dp"
+        android:text="教师："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ECI"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="65dp"
+        android:layout_toEndOf="@+id/T12"
+        android:background="@null" />
+
+    <TextView
+        android:id="@+id/T12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="65dp"
+        android:text="序号："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EONE"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="331dp"
+        android:layout_toEndOf="@+id/T13"
+        android:background="@null" />
+
+    <TextView
+        android:id="@+id/T13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="331dp"
+        android:text="第一节课："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/T133"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="331dp"
+        android:text="星期"
+        android:textColor="#C85E5B5B"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/T134"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="331dp"
+        android:text="第"
+        android:textColor="#C85E5B5B"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/EONE1"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="331dp"
+        android:layout_toEndOf="@+id/T13"
+        android:background="@null" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="273dp"
+        android:layout_marginTop="331dp"
+        android:text="节课"
+        android:textColor="#C85E5B5B"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/ETWO"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="369dp"
+        android:layout_toEndOf="@+id/T14"
+        android:background="@null" />
+
+    <TextView
+        android:id="@+id/T14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="369dp"
+        android:text="第二节课："
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/T143"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="369dp"
+        android:text="星期"
+        android:textColor="#C85E5B5B"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/T144"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="369dp"
+        android:text="第"
+        android:textColor="#C85E5B5B"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/ETWO1"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="369dp"
+        android:layout_toEndOf="@+id/T13"
+        android:background="@null" />
+
+    <TextView
+        android:id="@+id/T146"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="273dp"
+        android:layout_marginTop="369dp"
+        android:text="节课"
+        android:textColor="#C85E5B5B"
+        android:textSize="17sp" />
+
+    <Spinner
+        android:id="@+id/SCSty"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="103dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/T14"
+        android:layout_marginTop="13dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/ButtonUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/T14"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="18dp"
+        android:text="确认更改" />
+
+    <Button
+        android:id="@+id/ButtonAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETWO1"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/ButtonUp"
+        android:text="确认新增" />
+
+</RelativeLayout>

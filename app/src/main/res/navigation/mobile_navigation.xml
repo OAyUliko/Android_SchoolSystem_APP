@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/person_information">
+
+    <fragment
+        android:id="@+id/person_information"
+        android:name="com.example.android_student_system.student.ui.person_information.person_informationFragment"
+        android:label="个人信息"
+        tools:layout="@layout/fragment_person_information" />
+
+    <fragment
+        android:id="@+id/score"
+        android:name="com.example.android_student_system.student.ui.score.scoreFragment"
+        android:label="成绩查询"
+        tools:layout="@layout/fragment_score" />
+
+    <fragment
+        android:id="@+id/about_class"
+        android:name="com.example.android_student_system.student.ui.about_class.about_classFragment"
+        android:label="课程相关"
+        tools:layout="@layout/fragment_about_class" />
+
+    <fragment
+        android:id="@+id/evaluate"
+        android:name="com.example.android_student_system.student.ui.evaluate.evaluateFragment"
+        android:label="教学评价"
+        tools:layout="@layout/evaluatemainfragment" />
+
+    <fragment
+        android:id="@+id/teacher_person_information"
+        android:name="com.example.android_student_system.teacher.ui.person_information.person_informationFragment"
+        android:label="个人信息"
+        tools:layout="@layout/fragment_person_information" />
+
+    <fragment
+        android:id="@+id/teacher_score"
+        android:name="com.example.android_student_system.teacher.ui.score.scoreFragment"
+        android:label="上传学生成绩"
+        tools:layout="@layout/fragment_score" />
+
+    <fragment
+        android:id="@+id/teacher_evaluate"
+        android:name="com.example.android_student_system.teacher.ui.evaluate.evaluateFragment"
+        android:label="个人教学评价"
+        tools:layout="@layout/evaluatemainfragment" />
+
+    <fragment
+        android:id="@+id/student_mgt"
+        android:name="com.example.android_student_system.admin.ui.student_mgt.studentmgtFragment"
+        android:label="学生管理"
+        tools:layout="@layout/fragment_student_mgt" />
+
+    <fragment
+        android:id="@+id/stuff_mgt"
+        android:name="com.example.android_student_system.admin.ui.stuff_mgt.stuffmgtFragment"
+        android:label="教师管理"
+        tools:layout="@layout/fragment_about_class" />
+
+    <fragment
+        android:id="@+id/course_mgt"
+        android:name="com.example.android_student_system.admin.ui.course_mgt.coursemgtFragment"
+        android:label="课程管理"
+        tools:layout="@layout/fragment_about_class" />
+
+    <fragment
+        android:id="@+id/classroom_mgt"
+        android:name="com.example.android_student_system.admin.ui.classroom_mgt.classroommgtFragment"
+        android:label="教室管理"
+        tools:layout="@layout/fragment_about_class" />
+
+</navigation>

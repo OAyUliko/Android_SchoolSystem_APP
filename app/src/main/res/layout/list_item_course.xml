@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="77dp"
+            app:srcCompat="@drawable/youjiantou"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="具体课程名字"
+            android:textColor="#34363F"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

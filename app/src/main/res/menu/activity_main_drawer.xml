@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/person_information"
+            android:icon="@drawable/person_information"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/score"
+            android:icon="@drawable/score"
+            android:title="成绩查询" />
+        <item
+            android:id="@+id/about_class"
+            android:icon="@drawable/about_class"
+            android:title="课程相关" />
+        <item
+            android:id="@+id/evaluate"
+            android:icon="@drawable/evaluate"
+            android:title="教学评价" />
+    </group>
+
+
+</menu>

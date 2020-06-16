@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp">
+
+        <TextView
+            android:id="@+id/StudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="62dp"
+            android:text="学生姓名："
+            android:textColor="#009688"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginBottom="37dp"
+            android:text="分数："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/value"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="270dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#009688"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/StudentNo"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="37dp"
+            android:text="学号："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/StudentClass"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="12dp"
+            android:text="班级："
+            android:textColor="#34363F"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/Queren"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginBottom="29dp"
+            android:layout_toEndOf="@+id/value"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/queren" />
+
+    </RelativeLayout>
+
+</LinearLayout>

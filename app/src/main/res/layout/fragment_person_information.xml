@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/person">
+    <!--上面的app 自己命名随意-->
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:clickable="false"
+        android:foregroundGravity="center_horizontal|fill"
+        android:src="@drawable/meiko" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/head"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="166dp"
+        android:src="@drawable/meiko" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/head"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
+        android:gravity="center"
+        android:text="姓名"
+        android:textColor="#FDFCFD"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
+        android:gravity="center"
+        android:text="学号"
+        android:textColor="#FDFCFD"
+        android:textSize="15dp"
+        />
+
+  <!--  Android 默认的listView 控件是不支持更改字体颜色，字体大小的-->
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_below="@+id/back"
+        android:layout_marginTop="0dp"
+        android:choiceMode="singleChoice"
+        android:divider="#564"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/changepass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv"
+        android:layout_marginTop="27dp"
+        android:text="更 改 密 码  >>"
+        android:layout_marginLeft="300dp"
+       />
+
+
+</RelativeLayout>

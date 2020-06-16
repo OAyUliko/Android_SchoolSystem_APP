@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/teacher_person_information"
+            android:icon="@drawable/person_information"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/teacher_score"
+            android:icon="@drawable/score"
+            android:title="上传学生成绩" />
+        <item
+            android:id="@+id/teacher_evaluate"
+            android:icon="@drawable/evaluate"
+            android:title="个人教学评价" />
+    </group>
+
+</menu>
